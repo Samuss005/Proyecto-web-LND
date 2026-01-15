@@ -1,0 +1,287 @@
+:root {
+    --bg-main: #302e2e;      
+    --bg-alt: #2A3A5F;       
+    --text-primary: #FFFFFF; 
+    --accent: #00BFFF;       
+}
+/* Fondo solo en la página de inicio */
+body.inicio {
+    background-image: url('/assets/fondogundam.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; 
+}
+
+
+body.inicio::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+/* Fondo de la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.logo-red { color: #FF3C3C; }   
+.logo-blue { color: #00BFFF; }  
+.logo-white { color: #FFFFFF; } 
+
+
+
+/*No tocar*/
+* {
+    margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+}
+        
+
+
+header {
+    background-color: #1a1818;
+    padding: 20px 0; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px; 
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px; 
+    text-shadow: 0 0 10px #00BFFF, 0 0 20px #FF3C3C; 
+}
+
+/* Colores de las letras del logo */
+.logo-red { color: #FF3C3C; }   
+.logo-blue { color: #00BFFF; }  
+.logo-white { color: #FFFFFF; } 
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00BFFF;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh; 
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #FFFFFF; 
+}
+
+
+.hero h1 {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00BFFF; 
+    text-shadow:
+        0 0 5px #00BFFF,
+        0 0 15px #FF3C3C,
+        0 0 20px #00BFFF;
+    z-index: 1;
+    animation: glow 2s infinite alternate;
+}
+
+
+.hero p {
+    position: relative;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+
+.section-alt {
+    background-color: #2A3A5F; 
+    padding: 50px 20px;
+    color: #FFFFFF;
+}
+
+.section-alt h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00BFFF;
+    text-shadow: 0 0 5px #08b6f0, 0 0 15px #FF3C3C;
+}
+
+/* Contenedor de las tarjetas */
+.section-alt .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas individuales */
+.section-alt .card {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: 2px solid #09befa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover en las tarjetas */
+.section-alt .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #27c1f5, 0 0 25px #FF3C3C;
+}
+
+/* Títulos dentro de las tarjetas */
+.section-alt .card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00BFFF;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #FF3C3C;
+}
+
+/* Texto dentro de las tarjetas */
+.section-alt .card p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+
+/*Imagenes de los pilotos*/
+
+#pilotos {
+    background-color: #2A3A5F; 
+    padding: 50px 20px;
+    color: #FFFFFF;
+}
+
+#pilotos h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00BFFF;
+    text-shadow: 0 0 5px #00BFFF, 0 0 15px #FF3C3C;
+}
+
+/* Contenedor de tarjetas */
+#pilotos .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas individuales */
+#pilotos .card {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: 2px solid #00BFFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover en las tarjetas */
+#pilotos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00BFFF, 0 0 25px #FF3C3C;
+}
+
+/* Imagen de piloto */
+.card .card-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #00BFFF;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card .card-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos dentro de las tarjetas */
+#pilotos .card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00BFFF;
+    text-shadow: 0 0 5px #00BFFF, 0 0 10px #FF3C3C;
+}
+
+/* Texto dentro de las tarjetas */
+#pilotos .card p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+
