@@ -6,7 +6,7 @@
 }
 /* Fondo solo en la página de inicio */
 body.inicio {
-    background-image: url('/assets/fondogundam.jpg'); 
+    background-image: url('../assets/fondogundam.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,5 +283,73 @@ nav ul li a:hover {
     font-size: 1rem;
     color: #FFFFFF;
     line-height: 1.4;
+}
+
+
+/* Fondo pagina tipos ms */
+body.tipos{
+    background-image: url('../assets/fondo2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; 
+}
+
+body.tipos::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00BFFF;
+    text-shadow: 0 0 8px #00BFFF, 0 0 15px #FF3C3C;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.ms-types {
+    padding: 60px 20px;
+    background-color: #2A3A5F;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.ms-card {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid #00BFFF;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.ms-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00BFFF, 0 0 30px rgba(0, 191, 255, 0.5);
 }
 
