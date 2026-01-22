@@ -359,3 +359,14 @@ body.tipos::before {
     object-fit: contain;
     margin-bottom: 15px;
 }
+
+
+/* Fondo pagina juego/figura */
+body.juegos{
+    background-image: url('../assets/juegos.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; 
+}
