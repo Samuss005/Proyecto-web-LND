@@ -370,3 +370,108 @@ body.juegos{
     background-attachment: fixed;
     color: #FFFFFF; 
 }
+
+/*Fondo pagina de cronologia */
+body.uc{
+    background-image: url('../assets/galaxaaaai.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; 
+}
+
+
+/* INTRO*/
+.uc-intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.uc-intro h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #00BFFF;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00BFFF;
+}
+
+.uc-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* LÍNEA TEMPORAL */
+.uc-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-left: 3px solid #00BFFF;
+}
+
+/* Evento individual */
+.uc-event {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+
+/* Punto en la línea */
+.uc-event::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #00BFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00BFFF;
+}
+
+/* Año */
+.uc-year {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF3C3C;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Título evento */
+.uc-event h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00BFFF;
+    margin: 10px 0;
+}
+
+/* Texto */
+.uc-event p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+
+.uc-map {
+    margin-top: 20px;
+    max-width: 600px;
+    border: 2px solid #2A3A5F;
+    background-color: #111;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+    overflow: hidden;
+}
+
+/* Imagen del mapa */
+.uc-map img {
+    width: 100%;
+    display: block;
+    opacity: 0.9;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Efecto HUD al pasar el mouse */
+.uc-map:hover img {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
